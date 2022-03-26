@@ -1,6 +1,6 @@
 # Laptop Mania
 
-Live Website Link: (https://laptop-mania-react.netlify.app/).
+Live Website Link: https://laptop-mania-react.netlify.app/
 
 ## Available Scripts
 
