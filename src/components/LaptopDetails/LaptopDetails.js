@@ -2,11 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import './LaptopDetails.css'
+import NewsLetter from '../NewsLetter/NewsLetter';
 const LaptopDetails = ({laptop, handleClick}) => {
     const {id, img, name, price} = laptop;
   
     return (
-        <div className="product text-center">
+        <div>
+            <div className="product text-center">
             <img src={img} alt="" />
             <div className="product-info">
                 <p>Product Id: {id}</p>
@@ -17,6 +19,10 @@ const LaptopDetails = ({laptop, handleClick}) => {
                 Add To Cart 
              <FontAwesomeIcon className="mx-2" icon={faCartPlus} />
             </button>
+            
+        </div>
+        
+
         </div>
     );
 };

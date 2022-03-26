@@ -30,6 +30,7 @@ const Laptop = () => {
                     laptops.map(laptop => <LaptopDetails key={laptop.id} laptop={laptop} handleClick={handleClick}></LaptopDetails>)
                 }
             </div>
+            
             <div className="cart-container">
                 <h4>Selceted Product:</h4>
                 <ProductCart cart={cart} key={cart.laptop} handleRemove={handleRemove}></ProductCart>
