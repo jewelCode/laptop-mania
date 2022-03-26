@@ -18,6 +18,9 @@ const Laptop = () => {
  
     const handleAddItems = (laptop) =>{
         const newCart = [...cart, laptop];
+        if(newCart.length > 4){
+            alert('you cannot add more than four items in the cart')
+        }
         setCart(newCart)
     }
 
