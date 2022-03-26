@@ -16,8 +16,8 @@ const ProductCart = ({cart, handleRemove}) => {
                 </div>)
             }
 
-            <button className="btn btn-warning me-2">Choose 1</button>
-            <button className="btn btn-warning" onClick={handleRemove}>Reset</button>
+            <button className="btn btn-warning me-2">Choose 1 For Me</button>
+            <button className="btn btn-warning" onClick={()=>handleRemove(cart.laptop)}>Choose Again</button>
         </div>
     );
 };

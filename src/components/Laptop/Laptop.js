@@ -18,9 +18,9 @@ const Laptop = () => {
         setCart(newCart)
     }
 
-    const handleRemove = () =>{
-       const emptyCart = [''];
-       setCart(emptyCart);
+    const handleRemove = (laptop) =>{
+       const newCart = cart.filter((c) => c.laptop !== laptop);
+       setCart(newCart);
     }
   
     return (
@@ -31,7 +31,8 @@ const Laptop = () => {
                 }
             </div>
             <div className="cart-container">
-                <ProductCart cart={cart} handleRemove={handleRemove}></ProductCart>
+                <h4>Selceted Product:</h4>
+                <ProductCart cart={cart} key={cart.laptop} handleRemove={handleRemove}></ProductCart>
             </div>
         </div>
     );
