@@ -3,8 +3,8 @@ import './ProductCart.css';
 
 
 
-const ProductCart = ({cart}) => {
-
+const ProductCart = ({cart, handleRemove}) => {
+    
     return (
         <div>
             {
@@ -15,6 +15,9 @@ const ProductCart = ({cart}) => {
                         </p>
                 </div>)
             }
+
+            <button className="btn btn-warning me-2">Choose 1</button>
+            <button className="btn btn-warning" onClick={handleRemove}>Reset</button>
         </div>
     );
 };

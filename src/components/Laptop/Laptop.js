@@ -17,6 +17,11 @@ const Laptop = () => {
         const newCart = [...cart, laptop];
         setCart(newCart)
     }
+
+    const handleRemove = () =>{
+       const emptyCart = [''];
+       setCart(emptyCart);
+    }
   
     return (
         <div className="shop-container">
@@ -26,8 +31,7 @@ const Laptop = () => {
                 }
             </div>
             <div className="cart-container">
-                <h3>Shopping Cart: {cart.length}</h3>
-                <ProductCart cart={cart}></ProductCart>
+                <ProductCart cart={cart} handleRemove={handleRemove}></ProductCart>
             </div>
         </div>
     );
