@@ -1,6 +1,6 @@
 # Laptop Mania
 
-Live Website Link: [Create React App](https://github.com/facebook/create-react-app).
+Live Website Link: (https://laptop-mania-react.netlify.app/).
 
 ## Available Scripts
 
