@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import LaptopDetails from '../LaptopDetails/LaptopDetails';
 import ProductCart from '../ProductCart/ProductCart';
-import './Laptop.css'
+
 
 const Laptop = () => {
    
     const [laptops, setLaptops] = useState([]);
     const [cart, setCart] = useState([]);
-    const [random, setRandom] =useState([]);
+    const [randomItem, setRandomItem] =useState([]);
 
     useEffect(()=>{
         fetch('products.json')
@@ -23,34 +24,36 @@ const Laptop = () => {
     const handleRandomItem = () =>{
         const randomNumber = cart;
         const randomCart = randomNumber[Math.floor(randomNumber.length * Math.random())];
-        const newRandom = [randomCart]
-        setRandom(newRandom)
+        const newRandomItem = [randomCart]
+        setRandomItem(newRandomItem)
     }
     
-    const handleRemove = (laptop) =>{
+    const handleRemoveItem = (laptop) =>{
        const newCart = cart.filter((c) => c.laptop !== laptop);
        setCart(newCart);
     }
     
   
     return (
-        <div className="shop-container row">
-            <div className="products-container">
-                {
-                    laptops.map(laptop => <LaptopDetails key={laptop.id} laptop={laptop} handleAddItems={handleAddItems}></LaptopDetails>)
-                }
+        <div className="row mt-5">
+                    
+                        <div className="col-md-9 col-sm-12">
+                                <div className="row container">
+                                    {
+                                        laptops.map(laptop => <LaptopDetails key={laptop.id} laptop={laptop} handleAddItems={handleAddItems}></LaptopDetails>)
+                                    }
+                                </div>
+                        </div>
+                        <div className="col-md-3 col-sm-12 mr-2">
+                                    <h3>Product Cart:</h3>
+                                    {
+                                        randomItem.map((random)=> <h5>Selected Product: {random.name}</h5>)
+                                    }
+                                    <ProductCart cart={cart} key={cart.id} handleRemoveItem={handleRemoveItem}></ProductCart>
+                                    <br />
+                                <Button className="btn btn-warning me-2" onClick={handleRandomItem}>Choose One For Me</Button>   
+                        </div>
             </div>
-            
-            <div className="cart-container">
-                <h3>Product Cart:</h3>
-                {
-                    random.map((ran)=> <h6>Selected Product: {ran.name}</h6>)
-                }
-                <ProductCart cart={cart} key={cart.id} handleRemove={handleRemove}></ProductCart>
-                <br />
-                <button className="btn btn-warning me-2" onClick={handleRandomItem}>Choose One For Me</button>
-            </div>
-        </div>
     );
 };
 

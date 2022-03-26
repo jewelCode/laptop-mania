@@ -1,9 +1,10 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './ProductCart.css';
 
 
 
-const ProductCart = ({cart, handleRemove}) => {
+const ProductCart = ({cart, handleRemoveItem}) => {
     return (
         <div>
             {
@@ -17,8 +18,8 @@ const ProductCart = ({cart, handleRemove}) => {
                 )
 
             }
-        
-            <button className="btn btn-warning" onClick={()=>handleRemove(cart.laptop)}>Choose Again</button>
+    
+            <Button className="btn btn-warning" onClick={()=>handleRemoveItem(cart.laptop)}>Choose Again</Button>
         </div>
     );
 };
