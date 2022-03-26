@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Acer Extensa 15 EX215-52-384M Intel Core i3 1005G1 15.6 Inch FHD Display Black Laptop",
+    "price": 41500,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/acer-extensa-15-ex215-52-384m-10th-gen-intel-core-11600768608.webp"
+  },
+  {
+    "id": "2",
+    "name": "Acer Aspire 3 A315-58G-54LW Intel Core i5 1135G7 15.6 Inch FHD Pure Silver Laptop #NX.ADUSI.003",
+    "price": 69500,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/acer-aspire-3-a315-58g-54lw-intel-core-i5-1135g7-31633519755.webp"
+  },
+  {
+    "id": "3",
+    "name": "Acer Aspire 5 A514-54G-50UR Intel Core i5 1135G7 14 Inch FHD IPS Display Pure Silver Laptop",
+    "price": 71500,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/acer-aspire-5-a514-54g-50ur-11th-gen-intel-core-11609048881.webp"
+  },
+  {
+    "id": "4",
+    "name": "Acer Swift 3 SF313-53-579S Intel Core i5 1135G7 13.5 Inch QHD IPS Display Sparkly Silver Laptop",
+    "price": 89500,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/acer-swift-3-sf313-53-579s-11th-gen-intel-core-i5-11609840971.webp"
+  },
+  {
+    "id": "5",
+    "name": "Acer Spin 3 SP313-51N-50XM Intel Core i5 1135G7 13.3 Inch 2K WQXGA IPS Touch Display Pure Silver 2 in 1 Laptop #NX.A9VSI.001",
+    "price": 103000,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/acer-spin-3-sp313-51n-50xm-intel-core-i5-1135g7-11636521881.webp"
+  },
+  {
+    "id": "6",
+    "name": "HP 15s-du1115TU Intel CDC N4020 15.6 Inch HD Display Silver Laptop #340N5PA-2Y",
+    "price": 33200,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/hp-15s-du1115tu-intel-cdc-n4020-156-inch-hd-11636263483.webp"
+  },
+  {
+    "id": "7",
+    "name": "HP 15s-du1116TU Intel PQC Silver N5030 15.6 Inch HD Display Black Laptop #340P2PA-2Y",
+    "price": 37800,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/hp-15s-du1116tu-intel-pqc-silver-n5030-156-inch-11638600684.webp"
+  },
+  {
+    "id": "8",
+    "name": "Apple MacBook Air Late 2020 Apple M1 Chip 13.3 Inch Retina Display Touch ID Space Gray MacBook #MGN73LL/A / MGN73ZP/A",
+    "price": 122000,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/apple-macbook-air-late-2020-apple-m1-chip-8gb-11607921530.webp"
+  },
+  {
+    "id": "9",
+    "name": "Asus X515MA Intel CDC N4020 15.6 Inch HD Display Transparent Silver Laptop #BR763W-X515MA / BR662W-X515MA",
+    "price": 35500,
+    "img": "https://www.ryanscomputers.com/storage/products/medium/asus-x515ma-intel-cdc-n4020-156-inch-hd-display-11647084358.webp"
+  }
+]
