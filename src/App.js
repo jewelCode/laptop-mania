@@ -10,7 +10,6 @@ function App() {
         <Header></Header>
         <Laptop></Laptop>
         <NewsLetter></NewsLetter>
-        
     </div>
   );
 }

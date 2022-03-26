@@ -4,11 +4,8 @@ import './ProductCart.css';
 
 
 const ProductCart = ({cart, handleRemove}) => {
-   
     return (
         <div>
-
-            
             {
                 cart.map((item)=>
                 <div key={item.id}>
@@ -21,7 +18,6 @@ const ProductCart = ({cart, handleRemove}) => {
 
             }
         
-            <button className="btn btn-warning me-2">Choose 1 For Me</button>
             <button className="btn btn-warning" onClick={()=>handleRemove(cart.laptop)}>Choose Again</button>
         </div>
     );
