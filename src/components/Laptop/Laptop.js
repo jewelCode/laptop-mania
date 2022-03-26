@@ -42,12 +42,13 @@ const Laptop = () => {
             </div>
             
             <div className="cart-container">
-                <h3>Product Cart</h3>
+                <h3>Product Cart:</h3>
                 {
-                    random.map((ran)=> <h6>Selected Product:{ran.name}</h6>)
+                    random.map((ran)=> <h6>Selected Product: {ran.name}</h6>)
                 }
                 <ProductCart cart={cart} key={cart.id} handleRemove={handleRemove}></ProductCart>
-                <button className="btn btn-warning me-2" onClick={handleRandomItem}>Choose 1 For Me</button>
+                <br />
+                <button className="btn btn-warning me-2" onClick={handleRandomItem}>Choose One For Me</button>
             </div>
         </div>
     );
